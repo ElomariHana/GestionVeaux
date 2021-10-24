@@ -1,0 +1,1 @@
+<?phpsession_start();if(!isset($_SESSION['login'])) {    header("Location: login.php");}// On écrase le tableau de session$_SESSION = array();// On détruit la sessionsession_destroy();header ('Location:login.php');?>
